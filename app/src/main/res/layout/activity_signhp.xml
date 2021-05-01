@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signhp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="350dp"
+        android:paddingBottom="120dp"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:paddingTop="20sp"
+            android:shadowColor="#0e0e0e"
+            android:text="Sign In"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="382dp"
+            android:layout_height="33dp"
+            android:includeFontPadding="false"
+            android:paddingTop="10sp"
+            android:textStyle="bold"
+            android:shadowColor="#0e0e0e"
+            android:text="Sign-In with Google account"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <Space
+            android:layout_width="200dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="365dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@drawable/box"
+            android:text="sign in" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

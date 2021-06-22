@@ -1,8 +1,11 @@
 package com.example.hrapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,20 +22,45 @@ import org.json.JSONObject;
 public class stats extends AppCompatActivity {
 
     TextView Tcases,Trecovered,Tcritical,Tactive,Ttotaldeath;
+    CardView country_wise,vaccine_country;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
+        getSupportActionBar().setTitle("Hospital Raman");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Tcases = findViewById(R.id.totalcases);
         Trecovered = findViewById(R.id.recovered_case);
         Tcritical = findViewById(R.id.Critical);
         Tactive = findViewById(R.id.ACTIVE);
         Ttotaldeath = findViewById(R.id.TOTAL_DEATHS);
-
+        vaccine_country = findViewById(R.id.vaccine_global);
+        country_wise = findViewById(R.id.country_wise_report);
 
         fetchdata();
+
+
+        vaccine_country.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(stats.this,vaccine_global.class);
+                startActivity(intent);
+            }
+        });
+
+        country_wise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(stats.this,country_cases.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 
     private void fetchdata() {

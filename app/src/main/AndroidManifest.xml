@@ -3,6 +3,10 @@
     package="com.example.hrapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -11,10 +15,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HRapp">
-        <activity android:name=".userbio"></activity>
-        <activity android:name=".afterSignActivity" />
-        <activity android:name=".signhp" />
-        <activity android:name=".stats" />
+        <activity android:name=".AfterSignin"></activity>
+        <activity android:name=".cm_fund_web" />
+        <activity android:name=".pm_fund_web" />
+        <activity android:name=".fund_care" />
+        <activity android:name=".UserRegistration" />
+        <activity android:name=".e_pass_Activity" />
+        <activity android:name=".country_cases" />
+        <activity android:name=".vaccine_global" />
+        <activity android:name=".self_assess" />
+        <activity android:name=".user_bio" />
+        <activity android:name=".bed_tamilnadu" />
+        <activity android:name=".vaccine_india_covid" />
+        <activity android:name=".info_covid" />
+        <activity android:name=".state_helpline_num" />
+        <activity android:name=".selectState" />
+        <activity android:name=".statewiseReport" />
+        <activity
+            android:name=".Todaycases"
+            android:parentActivityName=".bharathstats" />
+        <activity
+            android:name=".user_emergency"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bharathstats"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".stats"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

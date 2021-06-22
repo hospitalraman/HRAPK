@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_layout"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THANK YOU! FOR TAKING THE ASSES"
+        android:textAlignment="center"
+        android:textColor="#010DF1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_margin="40sp"
+        android:padding="3dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ED0D0D"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:text="NUM OF POINTS"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        android:id="@+id/score"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLICK HERE"
+            android:id="@+id/asess_result_button"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="#01D5F1"
+            android:layout_margin="20dp"
+            android:padding="3dp"/>
+
+
+
+</LinearLayout>
